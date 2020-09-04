@@ -1,0 +1,6 @@
+com\example\consumingwebservice\wsdl\GetTimeResponse.class
+time\TimeClient.class
+com\example\consumingwebservice\wsdl\package-info.class
+com\example\consumingwebservice\wsdl\ObjectFactory.class
+time\TimeConfiguration.class
+com\example\consumingwebservice\wsdl\GetTimeRequest.class

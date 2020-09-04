@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<binding>
+    <!-- Adapted from the spring oxm tests - Thanks! -->
+    <mapping name="products" class="org.jibx.test.Product">
+        <namespace uri="http://test.jibx.org/product" default="elements"/>
+        <collection field="productList">
+            <structure map-as="org.jibx.test.ProductType"/>
+        </collection>
+    </mapping>
+    <mapping name="product" class="org.jibx.test.ProductType">
+        <namespace uri="http://test.jibx.org/product" default="elements"/>
+        <value name="serialNumber" field="serialNumber" usage="required"/>
+        <value name="name" field="name" usage="required"/>
+        <value name="description" field="description" usage="required"/>
+        <value name="createDate" field="createDate" usage="required"/>
+    </mapping>
+</binding>
